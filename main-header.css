@@ -1,0 +1,73 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a
+{
+    text-decoration: none;  /*Quita el subrayado de los links*/
+    cursor: pointer; /*Cuando pasa el mouse por encima cambia de cursor a mano apuntando */
+}
+
+header
+{
+    width: 100%;  /*Tamaño horizontal que siempre ocupa el 100% del viewport */
+    height: 60px;    
+    display: flex;  /* Aqui definimos que para este contenedor vamos a usar display flex */  
+    justify-content: flex-end; /* Movemos los elementos de nav a la parte derecha del contenedor */
+    align-items: center; /* Alinear los elementos al centro */
+}
+
+header nav
+{
+    display: flex;   /* Aqui definimos que para este contenedor vamos a usar display flex */
+    justify-content: flex-end;  /* Movemos los elementos de nav a la parte derecha del contenedor */
+}
+
+header nav .nav-right-section
+{
+    width: 250px;
+    height: auto;  /*Asi toma de forma automatica la altura del contenedor padre (en este caso el header)*/
+    display: flex; /* Aqui definimos que para este contenedor vamos a usar display flex */
+    list-style: none; /*Quita el simbolo al inicio de las listas */
+    justify-content: center;  /* Alinear los elementos al centro */
+    align-items: center; /* Alinear los elementos al centro */
+}
+
+nav .nav-right-section a
+{
+    margin-right: 13px;
+    color: #000000;
+}
+
+nav .nav-right-section .menu-icon
+{
+    background-image: url('https://cdn.iconscout.com/icon/premium/png-256-thumb/menu-1899373-1606812.png'); /* De esta manera se coloca una imagen desde un archivo que esta en una URL de internet */
+    background-repeat: no-repeat; /*Esta es la manera que la imagen no se repita al momento de renderizarse en el espacio */
+    background-position: center; /*La imagen queda en el centro al 100%*/
+    background-size: contain;  /* Para que la imagen se acomode al tamaño del contenedor */
+    width: 17px;  /*Tamaño de la imagen */
+    height: 17px;
+    margin-left: 23px;
+}
+
+nav .nav-right-section img
+{
+    border-radius: 50%;
+    margin-left: 27px;
+}
