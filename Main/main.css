@@ -1,0 +1,101 @@
+main
+{
+    margin-top: 150px;
+    text-align: center;  /*Todo lo que este adentro de la etiqueta main pueda centrarse */
+}
+
+main .main-logo
+{
+    width: 530px;
+    margin: 0 auto; /* Lo que esta en este contenedor se posiciona en la parte central horizontal */
+    margin-bottom: 35px;
+}
+
+main .main-logo img
+{
+    width: 300px;
+}
+
+main .main-input
+{
+    width: 530px;
+    margin: 0 auto; /* Lo que esta en este contenedor se posiciona en la parte central horizontal */
+    margin-bottom: 35px;
+}
+
+main .main-input-container
+{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #e8e9ec;
+    display: flex;  /* Propiedad que nos ayuda a posicionar en forma lineal el contenido del contenedor */
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input
+{
+    width: 450px;
+    height: 40px;
+    border: none;  /*Quita el borde */
+    outline: none; /*Quita el borde azul que se activa al entrar al cuadro de ingreso de texto del input */
+}
+
+main .main-input-container:hover  /*Al momento que el curso pase por encima del elemento ejecute este código */
+{
+    box-shadow: 0 1px 6px 0 #20212447; /*Coloca una sombra al elemento */
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon
+{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;    
+}
+
+main .main-input .micro-icon
+{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px; 
+    cursor: pointer; /*Hace cambiar el puntero del mouse al pasar por encima del elemento */
+}
+
+main .main-buttons
+{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div
+{
+    display: inline-block;
+}
+
+main .main-buttons button
+{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover
+{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+}
+
+

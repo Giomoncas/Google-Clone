@@ -1,0 +1,175 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a
+{
+    text-decoration: none;  /*Quita el subrayado de los links*/
+    cursor: pointer; /*Cuando pasa el mouse por encima cambia de cursor a mano apuntando */
+}
+
+header
+{
+    width: 100%;  /*Tamaño horizontal que siempre ocupa el 100% del viewport */
+    height: 60px;    
+    display: flex;  /* Aqui definimos que para este contenedor vamos a usar display flex */  
+    justify-content: flex-end; /* Movemos los elementos de nav a la parte derecha del contenedor */
+    align-items: center; /* Alinear los elementos al centro */
+}
+
+header nav
+{
+    display: flex;   /* Aqui definimos que para este contenedor vamos a usar display flex */
+    justify-content: flex-end;  /* Movemos los elementos de nav a la parte derecha del contenedor */
+}
+
+header nav .nav-right-section
+{
+    width: 250px;
+    height: auto;  /*Asi toma de forma automatica la altura del contenedor padre (en este caso el header)*/
+    display: flex; /* Aqui definimos que para este contenedor vamos a usar display flex */
+    list-style: none; /*Quita el simbolo al inicio de las listas */
+    justify-content: center;  /* Alinear los elementos al centro */
+    align-items: center; /* Alinear los elementos al centro */
+}
+
+nav .nav-right-section a
+{
+    margin-right: 13px;
+    color: #000000;
+}
+
+nav .nav-right-section .menu-icon
+{
+    background-image: url('https://cdn.iconscout.com/icon/premium/png-256-thumb/menu-1899373-1606812.png'); /* De esta manera se coloca una imagen desde un archivo que esta en una URL de internet */
+    background-repeat: no-repeat; /*Esta es la manera que la imagen no se repita al momento de renderizarse en el espacio */
+    background-position: center; /*La imagen queda en el centro al 100%*/
+    background-size: contain;  /* Para que la imagen se acomode al tamaño del contenedor */
+    width: 17px;  /*Tamaño de la imagen */
+    height: 17px;
+    margin-left: 23px;
+}
+
+nav .nav-right-section img
+{
+    border-radius: 50%;
+    margin-left: 27px;
+}
+
+main
+{
+    margin-top: 150px;
+    text-align: center;  /*Todo lo que este adentro de la etiqueta main pueda centrarse */
+}
+
+main .main-logo
+{
+    width: 530px;
+    margin: 0 auto; /* Lo que esta en este contenedor se posiciona en la parte central horizontal */
+    margin-bottom: 35px;
+}
+
+main .main-logo img
+{
+    width: 300px;
+}
+
+main .main-input
+{
+    width: 530px;
+    margin: 0 auto; /* Lo que esta en este contenedor se posiciona en la parte central horizontal */
+    margin-bottom: 35px;
+}
+
+main .main-input-container
+{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #e8e9ec;
+    display: flex;  /* Propiedad que nos ayuda a posicionar en forma lineal el contenido del contenedor */
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input
+{
+    width: 450px;
+    height: 40px;
+    border: none;  /*Quita el borde */
+    outline: none; /*Quita el borde azul que se activa al entrar al cuadro de ingreso de texto del input */
+}
+
+main .main-input-container:hover  /*Al momento que el curso pase por encima del elemento ejecute este código */
+{
+    box-shadow: 0 1px 6px 0 #20212447; /*Coloca una sombra al elemento */
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon
+{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;    
+}
+
+main .main-input .micro-icon
+{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px; 
+    cursor: pointer; /*Hace cambiar el puntero del mouse al pasar por encima del elemento */
+}
+
+main .main-buttons
+{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div
+{
+    display: inline-block;
+}
+
+main .main-buttons button
+{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover
+{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+}
+
+
