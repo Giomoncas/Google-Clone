@@ -1,0 +1,38 @@
+footer
+{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;  /*Generamos una cuadricula para colocar el contenido de este proyecto */
+    grid-template-columns: 1fr 1fr;  /*De esta manera se divide el contenedor en dos fracciones */
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul
+{
+    margin: 10px;
+    list-style: none;
+    display: flex;  /*Posicionar el contenido en forma horizontal */
+    padding-left: 0;
+}
+
+footer .footer-left
+{
+    justify-self: left;  /*Todo el contenido se justifica a la izquierda */
+}
+
+footer .footer-right
+{
+    justify-self: right;  /*Todo el contenido se justifica a la derecha */
+}
+
+footer ul li a
+{
+    margin: 10px;
+    text-decoration: none;
+    color: #5f6368;
+}
